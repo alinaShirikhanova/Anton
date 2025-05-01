@@ -5,7 +5,10 @@ import java.util.*;
 public class Example {
     public static void main(String[] args) {
 //        final User user = new User("Ivan");
-//        Map<String, Integer> map1 = new HashMap<>();
+        Map<String, Integer> map1 = new HashMap<>();
+        map1.put(null, 1);
+        map1.put("one", null);
+        System.out.println(map1.get("one"));
 //        Map<String, Integer> map2 = new HashMap<>(100);
 //        Map<String, Integer> map3 = new HashMap<>(100, 0.9f);
 //        Map<String, Integer> map4 = new HashMap<>(map1);

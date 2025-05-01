@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args) {
+
 //        List<Integer> list1 = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6));
 //        List<Integer> list2 = new LinkedList<>(List.of(1, 2, 3, 4, 5, 6));
 //

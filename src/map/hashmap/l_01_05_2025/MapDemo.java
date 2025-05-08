@@ -49,9 +49,7 @@ public class MapDemo {
             }
         }
         System.out.println(cars);
-
 //        Распечатать ключи и значения тех людей, у которых возраст больше 10
-
     }
 }
 

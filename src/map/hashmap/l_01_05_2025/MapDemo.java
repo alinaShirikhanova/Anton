@@ -1,9 +1,7 @@
 package map.hashmap.l_01_05_2025;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class MapDemo {
     public static void main(String[] args) {
@@ -11,8 +9,10 @@ public class MapDemo {
         map.put("one", 1);
         map.put("two", 1);
         map.put("three", 1);
-        map.replace("one", 1, 10);
         System.out.println(map);
+
+
+
 //        map.put(null, 0);
 //        map.put("four", null);
 

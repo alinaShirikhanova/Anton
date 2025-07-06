@@ -1,7 +1,6 @@
 package map.hashmap.treemap;
 
-import java.util.Comparator;
-import java.util.TreeMap;
+import java.util.*;
 
 public class TreeMapDemo {
     public static void main(String[] args) {
@@ -19,13 +18,39 @@ public class TreeMapDemo {
 //
 //        System.out.println("Hello".compareTo("HeLllo1"));
 //
-        Product product1 = new Product("1", 100);
-        Product product2 = new Product("1", 100);
-        Product product3 = new Product("1", 100);
-        TreeMap<Product, Integer> products = new TreeMap<>();
-        products.put(null, 1);
+//        Product product1 = new Product("1", 100);
+//        Product product2 = new Product("2", 100);
+//        Product product3 = new Product("1", 100);
+//
+//        TreeMap<Product, Integer> products = new TreeMap<>();
+//        products.put(null, 1);
 
 //        product1.compareTo(product2);
+//        TreeMap<Integer, String> map = new TreeMap<>();
+//        Set<Integer> integers = map.keySet();
+//        for (Integer key : integers) {
+//            System.out.println(key + ":" + map.get(key));
+//        }
+
+//        for (Integer integer : integers) {
+//
+//        }
+//        for (Map.Entry<Integer, String> elem : map.entrySet()) {
+//
+//        }
+
+//        map.entrySet()
+
+        String line1 = "hello";
+        String line2 = "Hello";
+        System.out.println(line1.compareTo(line2));
+
+        Product product1 = new Product("1", 100);
+        Product product2 = new Product("2", 100);
+        Product product3 = new Product("1", 100);
+
+        product1.compareTo(product2);
+
     }
 }
 
@@ -40,7 +65,10 @@ class Product implements Comparable<Product> {
 
     @Override
     public int compareTo(Product o) {
-        return Integer.compare(this.price, o.price);
+        return this.name.compareTo(o.name);
+
+
+//        return Integer.compare(this.price, o.price);
 //        return this.price - o.price;
     }
 }
